@@ -1,9 +1,9 @@
 name: Build dev container image
+run-name: Docker build by @${{ github.actor }}
 on: [push]
 jobs:
   build-docker:
-    runs-on: 
-    setps:
+    steps:
       - name: Build docker image
         uses: devcontainers/ci@v0.2
         with:
