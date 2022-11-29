@@ -3,7 +3,9 @@ run-name: Docker build by @${{ github.actor }}
 on: [push]
 jobs:
   build-docker:
+    runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Build docker image
         uses: devcontainers/ci@v0.2
         with:
