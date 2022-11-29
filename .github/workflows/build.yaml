@@ -1,0 +1,12 @@
+name: Build dev container image
+on: [push]
+jobs:
+  build-docker:
+    runs-on: 
+    setps:
+      - name: Build docker image
+        uses: devcontainers/ci@v0.2
+        with:
+          imageName: ghcr.io/rauljmz/devcontainer-serverless
+          cacheFrom: ghcr.io/rauljmz/devcontainer-serverless
+          push: always

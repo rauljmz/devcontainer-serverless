@@ -1,0 +1,13 @@
+{
+	"name": "Serverless with Node.js & TypeScript",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"IMAGE": "mcr.microsoft.com/vscode/devcontainers/typescript-node:14"
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {},
+		"ghcr.io/devcontainers-contrib/features/jest:1": {}
+	}
+}
